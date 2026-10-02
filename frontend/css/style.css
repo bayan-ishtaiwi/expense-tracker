@@ -1,0 +1,36 @@
+/* General page styling */
+
+body {
+    background-color: #f8f9fa;
+}
+
+
+/* Summary Cards */
+
+.summary-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+
+/* Summary card hover effect */
+
+.summary-cards .card {
+    transition: transform 0.2s ease;
+}
+
+.summary-cards .card:hover {
+    transform: translateY(-3px);
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 767.98px) {
+
+    .summary-cards {
+        grid-template-columns: 1fr;
+    }
+
+}
